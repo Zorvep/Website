@@ -1,0 +1,22 @@
+.button {
+  background-color: grey;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+  box-shadow: 3px 3px 5px rgb(25, 25, 25);
+
+  color: white;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: slide 1s infinite;
+  transition: transform 0.2s ease
+}
+
+.button:hover {
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  background-color: rgb(70, 70, 70);
+}
