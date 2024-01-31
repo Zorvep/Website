@@ -1,3 +1,4 @@
+//Adjust height of hackerbox textarea to fit content
 document.addEventListener('DOMContentLoaded', function() {
     function autoResize(textarea) {
         textarea.style.height = 'auto';
