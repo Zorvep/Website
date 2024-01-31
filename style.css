@@ -23,23 +23,21 @@
 
 .hackerbox {
   font-family: monospace;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   height: auto;
+  width: 500px;
+  margin: auto;
   padding-inline: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-radius: 0.5em;
   outline: 2px dashed rgba(0, 255, 30, 0.2);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  display: flex;
-  justify-content: center;
-  width: 500px;
-  margin: auto;
   border: none;
   resize: none;
   box-sizing: border-box;
 }
 
-.hackerbox::-webkit-scrollbar {
-  display: none;
+.hackerbox:focus {
+  outline: 2px dashed rgba(0, 255, 30, 0.4);
 }
