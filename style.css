@@ -36,3 +36,7 @@
 .hackerbox:focus {
   outline: 2px dashed rgba(0, 255, 30, 0.4);
 }
+
+.hamburger {
+  display: none;
+}
