@@ -24,7 +24,6 @@
 .hackerbox {
   font-family: monospace;
   height: auto;
-  
   padding-inline: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -39,7 +38,6 @@
   border: none;
   resize: none;
   box-sizing: border-box;
-  
 }
 
 .hackerbox::-webkit-scrollbar {
