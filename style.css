@@ -1,43 +1,21 @@
-.button2 {
-  width: 150px;
+.button {
+  font-family: monospace;
+  width: auto;
   height: 50px;
   background-color: #333;
   color: #fff;
   border: none;
   padding: 10px 20px;
+  margin: 0px 5px;
   display: inline-block;
   font-size: 30px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-.button2:hover {
-  background-color: #555; /* slightly lighter background on hover */
-}
-
-.button {
-  background-color: grey;
-  width: 200px;
-  height: 50px;
-  border-radius: 10px;
-  border: none;
-  margin: 0px 10px;
-  box-shadow: 3px 3px 5px rgb(25, 25, 25);
-
-  color: white;
-  font-size: 1.5em;
-  font-family: sans-serif;
-  font-weight: bold;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  animation: slide 1s infinite;
-  transition: transform 0.2s ease
-}
-
 .button:hover {
-  box-shadow: 3px 3px 5px rgb(0, 0, 0);
-  background-color: rgb(70, 70, 70);
+  background-color: #555; /* slightly lighter background on hover */
 }
 
 .hackerbox {
