@@ -5,14 +5,16 @@
   background-color: #333;
   color: #fff;
   border: none;
-  padding: 10px 20px;
   margin: 0px 5px;
-  display: inline-block;
+  padding: 0px 10px;
+  align-items: center;
   font-size: 30px;
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
 }
 
 .button:hover {
