@@ -1,12 +1,5 @@
-//Adjust height of hackerbox textarea to fit content
-document.addEventListener('DOMContentLoaded', function() {
-    function autoResize(textarea) {
-        textarea.style.height = 'auto';
-        textarea.style.height = textarea.scrollHeight + 'px';
-    }
-
-    var textareas = document.getElementsByClassName('hackerbox');
-    for (var i = 0; i < textareas.length; i++) {
-        autoResize(textareas[i]);
-    }
+// Add an event listener to the button
+document.getElementById('sidebarButton').addEventListener('click', function() {
+    // Toggle the open class on the sidebar
+    document.getElementById('sidebar').classList.toggle('open');
 });

@@ -13,10 +13,13 @@
         }
         
         h1 {
+            margin: 0;
+            padding-top: 30px;
+            padding-bottom: 30px;
             color: rgb(255, 255, 255);
             text-align: center;
             font-family: system-ui, BlinkMacSystemFont;
-            font-size: 69px ;
+            font-size: 70px ;
         }
     
         h2 {
@@ -43,11 +46,11 @@
 </head>
 
 <!-- Backround-->
-<body style="background-color: rgb(40, 40, 40);  margin: 0; padding: 0; background-color: rgb(40, 40, 40);">
+<body style="background-color: rgb(40, 40, 40); margin: 0; padding: 0; overflow-x: hidden;">
 
 <!-- Sidebar-->
-<div style="position: fixed; background-color: black; width: 20vw; height: 100vh;">
-    <button class="button" style="padding: 11px; width: 50px; height: 50px; flex-direction: column; justify-content: space-between;">
+<div id="sidebar" class="sidebar">
+    <button id="sidebarButton" class="button" style="margin: 0px; padding: 11px; width: 50px; height: 50px; flex-direction: column; justify-content: space-between;">
         <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
         <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
         <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
@@ -64,7 +67,6 @@
     <a href="/previous-work" class="button">Previous work</a>
     <a href="/contact" class="button">Contact</a>
 </div>
-<br>
 
 </body>
 </html>

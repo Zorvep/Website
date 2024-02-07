@@ -23,7 +23,7 @@
 
 .hackerbox {
   font-family: 'Courier New', monospace;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   height: auto;
   width: 600px;
@@ -39,4 +39,17 @@
 
 .hackerbox:focus {
   outline: 2px dashed rgba(0, 255, 30, 0.4);
+}
+
+.sidebar {
+position: fixed;
+background-color: rgb(25, 25, 25);
+width: 15vw;
+height: 100vh;
+box-shadow: 3px 0 6px #0000004d;
+transition: width 0.5s;
+}
+
+#sidebar.open {
+  width: 10vw;
 }
