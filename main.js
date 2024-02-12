@@ -1,5 +1,12 @@
-// Add an event listener to the button
-document.getElementById('sidebarButton').addEventListener('click', function() {
-    // Toggle the open class on the sidebar
-    document.getElementById('sidebar').classList.toggle('open');
-});
+function ToggleSideBar() {
+    var element = document.getElementById("sidebar")
+    var display = element.style.display
+    console.log(element)
+
+    if (display !== "none") {
+        element.style.display = "none"
+    }
+    else {
+        element.style.display = "inline"
+    }
+}
