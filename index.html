@@ -23,7 +23,7 @@
         }
     
         h2 {
-            color: rgb(255, 255, 255);
+            color: white;
             text-align: center;
             font-family: sans-serif;
         }
@@ -45,12 +45,33 @@
     <script type="text/javascript" src="main.js"></script>
 </head>
 
+<div style="background-color: rgb(117, 117, 117); height: 10vh; display: flex; align-items: center;">
+    <button id="sidebarButton" onclick="ToggleSideBar(this)" class="button" style="margin: 0px; padding: 11px; width: 50px; height: 50px; flex-direction: column; justify-content: space-between; ">
+        <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
+        <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
+        <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
+    </button>
+    
+    <a href="/" style="margin: 0;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: system-ui, BlinkMacSystemFont;
+    font-size: 70px ;
+    ">ZORVEP</a>
+
+    <h1 style="font-size: 3em;">ZORVEP</h1>
+</div>
+
 <!-- Backround-->
 <body style="background-color: rgb(40, 40, 40); margin: 0; padding: 0; overflow-x: hidden;">
 
 <!-- Sidebar-->
 <div id="sidebar" class="sidebar" style="display: inline;">
-    <button id="sidebarButton" onclick="ToggleSideBar()" class="button" style="position: fixed; margin: 0px; padding: 11px; width: 50px; height: 50px; flex-direction: column; justify-content: space-between; ">
+    <button id="sidebarButton" onclick="ToggleSideBar(this)" class="button" style="position: fixed; margin: 0px; padding: 11px; width: 50px; height: 50px; flex-direction: column; justify-content: space-between; ">
         <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
         <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
         <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
@@ -64,7 +85,7 @@
     <a class="button" style="margin: 10% 10%; background-color: rgb(35, 35, 35);" href="contact">Contact</a>
 </div>
 
-<button id="sidebarButton" onclick="ToggleSideBar()" class="button" style="margin: 0px; padding: 11px; width: 50px; height: 50px; flex-direction: column; justify-content: space-between; ">
+<button id="sidebarButton" onclick="ToggleSideBar(this)" class="button" style="background-color: black; margin: 0px; padding: 11px; width: 50px; height: 50px; flex-direction: column; justify-content: space-between; ">
     <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
     <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
     <hr style="margin: 0; width: 1em; height:3px; border: none; background-color: white;">
