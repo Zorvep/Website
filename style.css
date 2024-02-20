@@ -55,7 +55,6 @@ transition: width 0.5s;
 }
 
 .navbar {
-  font-size: 1.25em;
   font-family: sans-serif;
   color: grey;
   text-decoration: none;
@@ -73,6 +72,6 @@ transition: width 0.5s;
   color: white;
   padding: 0 1vw;
 }
-.navbar:hover:not(:last-child)::after {
+.navbar:hover::after {
   font-weight: normal;
 }
