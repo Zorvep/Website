@@ -90,5 +90,9 @@ transition: width 0.5s;
   visibility: hidden;
 }
 
-
-
+.header {
+  background-color: black;
+  height: 20vh;
+  width: 30vw;
+  transform: underline;
+}
