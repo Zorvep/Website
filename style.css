@@ -60,18 +60,25 @@ transition: width 0.5s;
   text-decoration: none;
   cursor: pointer;
   justify-content: space-between;
+  display: inline-block;
+  text-align: center;
 }
 
-.navbar:hover {
+.navbar :hover {
   color: white;
   font-weight: bold;
 }
 
-.navbar:not(:last-child)::after {
+.navbar::after {
   content: "|";
   color: white;
   padding: 0 1vw;
+  font-size: 1.5em;
 }
-.navbar:hover::after {
-  font-weight: normal;
+
+.navbar:last-child::after {
+  visibility: hidden;
 }
+
+
+
