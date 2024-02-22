@@ -74,15 +74,15 @@ transition: width 0.5s;
   text-align: center;
 }
 
-.navbar :hover {
+.navbar:hover {
   color: white;
   font-weight: bold;
 }
 
-.navbar::after {
+.navbar span::after {
   content: "|";
   color: white;
-  padding: 0 1vw;
+  padding: 0;  
   font-size: 1.5em;
 }
 
@@ -91,8 +91,35 @@ transition: width 0.5s;
 }
 
 .header {
-  background-color: black;
-  height: 20vh;
+  position: absolute;
+  height: 15vh;
   width: 30vw;
-  transform: underline;
+  padding: 0;
+  top: 50%;
+  left: 0;
+}
+
+.un {
+  display: inline-block;
+  position: relative;
+}
+
+.un:after {
+  content: '';
+  width: 0px;
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  transition: 300ms;
+}
+
+.un:hover:after {
+  width: 100%;
+}
+
+.un:not(:hover):after {
+  right: 0;
+  left: auto;
 }
