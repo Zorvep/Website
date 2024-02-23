@@ -55,13 +55,8 @@
   font-family: sans-serif;
   color: grey;
   text-decoration: none;
-  cursor: pointer;
-  justify-content: space-between;
-  display: inline-block;
-  text-align: center;
   padding-right: 10px;
   padding-left: 10px;
-  position: relative;
 }
 
 .navbar:hover {
@@ -82,7 +77,6 @@
 
 .header {
   position: absolute;
-  height: 15vh;
   width: 30vw;
   padding: 0;
   top: 50%;
