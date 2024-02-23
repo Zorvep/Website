@@ -8,6 +8,7 @@
   overflow-x: hidden;
   height: 100vh;
 }
+
 .button {
   font-family: 'Courier New', monospace;
   width: auto;
@@ -83,6 +84,27 @@
   left: 0;
 }
 
+@keyframes underlineAnimation {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+  60% {
+    width: 100%;
+    right: 0;
+    left: auto;
+  }
+  100% {
+    width: 0%;
+    right: 0;
+    left: auto;
+  }
+}
+
 .un {
   display: inline-block;
   position: relative;
@@ -96,14 +118,6 @@
   top: 100%;
   left: 0;
   background: white;
-  transition: 300ms;
-}
-
-.un:hover:after {
-  width: 100%;
-}
-
-.un:not(:hover):after {
-  right: 0;
-  left: auto;
+  animation: underlineAnimation 750ms;
+  animation-delay: 500ms;
 }
