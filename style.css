@@ -64,16 +64,12 @@
   font-weight: bold;
 }
 
-.navbar::after {
+.navbar:not(:last-child)::after {
   content: "|";
   color: white;
   font-weight: normal;
   font-size: 1.5em;
   margin: 1vw;
-}
-
-.navbar:last-child::after {
-  visibility: hidden;
 }
 
 .header {
