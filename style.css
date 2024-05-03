@@ -57,6 +57,13 @@
   outline: 2px dashed rgba(0, 255, 30, 0.4);
 }
 
+.navbar a{
+  display: inline-flex;
+  text-align: top;
+  height: 100%;
+}
+
+
 .navbar a, .navbar{
   font-family: sans-serif;
   color: grey;
@@ -64,7 +71,7 @@
 
 }
 
-.navbar a:hover, .navbar{
+.navbar a:hover{
   color: white;
   font-weight: bold;
 }
@@ -73,14 +80,13 @@
   content: "|";
   color: white;
   font-weight: normal;
-  font-size: 17px;
+  font-size: 222px;
   margin: 3vw;
 }
 
-
 .header {
   position: absolute;
-  width: 30vw;
+  width: 30vw;  
   padding: 0;
   top: 50%;
   left: 0;
