@@ -57,31 +57,35 @@
   outline: 2px dashed rgba(0, 255, 30, 0.4);
 }
 
-.navbar a{
-  display: inline-flex;
-  text-align: top;
-  height: 100%;
+.topbar {
+  padding-top: 6vh;
+  width: 80vw;
+  margin: auto;
 }
 
-
-.navbar a, .navbar{
-  font-family: sans-serif;
-  color: grey;
-  text-decoration: none;
-
-}
-
-.navbar a:hover{
-  color: white;
-  font-weight: bold;
-}
-
-.navbar:not(:last-child)::after{
+.topbar > *:not(:last-child)::after{
   content: "|";
   color: white;
   font-weight: normal;
   font-size: 222px;
   margin: 3vw;
+}
+
+.topbar > * a{
+  display: inline-flex;
+  text-align: top;
+  height: 100%;
+  text-decoration: none;
+}
+
+.topbar > * a, .topbar > *{
+  font-family: sans-serif;
+  color: grey;
+}
+
+.topbar > * a:hover{
+  color: white;
+  font-weight: bold;
 }
 
 .header {
