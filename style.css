@@ -59,6 +59,7 @@
   top: 50%;
   left: 5vw;
   position: absolute;
+  text-align: left;
 }
 
 .button {
