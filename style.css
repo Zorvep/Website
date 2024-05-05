@@ -4,7 +4,7 @@
 }
 
 .backround {
-  background-image: ;
+  /* background-image: url("/images/crossingarms.png"); */
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14,10 +14,18 @@
   overflow-x: hidden;
 }
 
+.backround-image {
+  background-image: url("/images/CrossingArms.png");
+  height: 1vh;
+  top: 100%;
+  left: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
 .topbar {
   width: 80vw;
-  padding-top: 2vw;
-  padding-left: 6vw;
+  padding: 1vw 0 0 5vw;
   position: fixed;
 }
 
@@ -49,7 +57,7 @@
 .header {  
   padding: 0;
   top: 50%;
-  left: 6vw;
+  left: 5vw;
   position: absolute;
 }
 
