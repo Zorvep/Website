@@ -30,7 +30,7 @@
 }
 
 .topbar a{
-  font-size: 17px;
+  font-size: 15px;
   letter-spacing: 1px;
   line-height: 1.5;
   margin: 0.5vw;
@@ -47,7 +47,7 @@
 }
 
 .topbar div:not(:last-child) {
-  height: 25px;
+  height: 20px;
   width: 1px;
   background-color: white;
   display: inline-flex;
@@ -123,11 +123,6 @@
     right: 0;
     left: auto;
   }
-}
-
-.un {
-  display: inline-block;
-  position: relative;
 }
 
 .un:after {
