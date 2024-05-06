@@ -16,11 +16,11 @@
 
 .backround-image {
   background-image: url("/images/CrossingArms.png");
-  height: 1vh;
-  top: 100%;
-  left: 50%;
+  height: 100px;
+  width: 100px;
+  top: 10%;
+  left: 10%;
   background-repeat: no-repeat;
-  position: absolute;
 }
 
 .topbar {
