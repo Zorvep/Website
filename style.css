@@ -78,7 +78,7 @@
 
 .header {  
   padding: 0;
-  top: 50%;
+  top: 45%;
   left: 5vw;
   position: absolute;
   text-align: left;
@@ -115,17 +115,16 @@
   font-family: 'Courier New', monospace;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
-  outline: 2px dashed rgba(0, 255, 30, 0.2);
+  outline: auto;
   padding-inline: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  border-radius: 0.5em;
   resize: none;
   box-sizing: border-box;
 }
 
 .hackerbox:focus {
-  outline: 2px dashed rgba(0, 255, 30, 0.4);
+  outline: 2px dashed rgba(255, 255, 255, 0.4);
 }
 
 @keyframes underlineAnimation {
