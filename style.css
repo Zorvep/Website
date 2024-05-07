@@ -55,7 +55,8 @@
 }
 
 @keyframes glow {
-  100% {box-shadow:rgb(200, 200, 200) 4px 4px 5px, rgb(200, 200, 200) -2px -2px 20px;}
+  100% {box-shadow:rgb(200, 200, 200) 4px 4px 5px,
+    rgb(200, 200, 200) -2px -2px 20px;}
 }
 
 .topbar div:hover{
@@ -81,6 +82,8 @@
   left: 5vw;
   position: absolute;
   text-align: left;
+  filter: drop-shadow(-10px -10px 40px rgb(255, 255, 255, 0.3))
+  drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.5));
 }
 
 .button {
