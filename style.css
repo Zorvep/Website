@@ -4,13 +4,13 @@
 }
 
 .CursorGlow {
-  height: 15px;
-  width: 15px;
+  height: 16px;
+  width: 16px;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
   left: -50vw;
   position: absolute;
-  filter: drop-shadow(0px 0px 15px white) contrast(200%);
+  filter: drop-shadow(0px 0px 15px white);
   pointer-events: none;
   mix-blend-mode: difference;
 }
@@ -44,20 +44,15 @@
 }
 
 .TopBar {
-  height: 1vw;
-  width: 80vw;
+  height: auto;
+  width: 100%;
   padding: 1vw 0 0 5vw;
+  display: inline-flex;
   position: fixed;
   user-select: none;
 }
-
-.TopBar {
-  display: inline-flex;
-  height: auto;
-}
-
 .TopBar a{
-  padding: 10px;
+  padding: 12px;
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 2;
@@ -78,7 +73,7 @@
 
 .TopBar a:hover{
   color: white;
-  animation: glow 0.1s forwards;
+  animation: glow 0.2s forwards;
 }
 
 .Header {  
