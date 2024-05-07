@@ -3,7 +3,11 @@
   --grey: grey;
 }
 
-.backround {
+* {
+  cursor: none;
+}
+
+.Backround {
   /* background-image: url("/images/crossingarms.png"); */
   height: 100vh;
   background-size: cover;
@@ -14,7 +18,7 @@
   overflow-x: hidden;
 }
 
-.backround-image {
+.BackroundImage {
   background-image: url("/images/CrossingArms.png");
   height: 50vw;
   width: 50vw;
@@ -27,7 +31,19 @@
   drop-shadow(-15px -15px 30px rgb(92, 92, 92));
 }
 
-.topbar {
+.MouseGlow {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  left: -50vw;
+  position: absolute;
+  filter: drop-shadow(0px 0px 15px white) contrast(200%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.TopBar {
   height: 1vw;
   width: 80vw;
   padding: 1vw 0 0 5vw;
@@ -35,12 +51,12 @@
   user-select: none;
 }
 
-.topbar div {
+.TopBar div {
   display: inline-flex;
   height: auto;
 }
 
-.topbar div a{
+.TopBar div a{
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 2;
@@ -49,7 +65,7 @@
   user-select: none;
 }
 
-.topbar div a, .topbar div div{
+.TopBar div a, .TopBar div div{
   color: grey;
   font-family: 'Courier New', monospace;
 }
@@ -59,16 +75,16 @@
     rgb(200, 200, 200) -2px -2px 20px;}
 }
 
-.topbar div:hover{
+.TopBar div:hover{
   color: white;
   animation: glow 0.1s forwards;
 }
 
-.topbar div:hover a{
+.TopBar div:hover a{
   color: white;
 }
 
-.topbar div div:not(:last-child) {
+.TopBar div div:not(:last-child) {
   height: 20px;
   width: 1px;
   background-color: white;
@@ -76,7 +92,7 @@
   position: absolute;
 }
 
-.header {  
+.Header {  
   padding: 0;
   top: 45%;
   left: 5vw;
@@ -86,7 +102,7 @@
   drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.5));
 }
 
-.button {
+.Button {
   height: 50px;
   width: auto;
   font-size: 30px;
@@ -105,11 +121,11 @@
   align-items: center;
 }
 
-.button:hover {
+.Button:hover {
   background-color: #555; /* slightly lighter background on hover but use root vars */
 }
 
-.hackerbox {
+.Hackerbox {
   height: auto;
   width: 600px;
   font-family: 'Courier New', monospace;
@@ -123,7 +139,7 @@
   box-sizing: border-box;
 }
 
-.hackerbox:focus {
+.Hackerbox:focus {
   outline: 2px dashed rgba(255, 255, 255, 0.4);
 }
 
@@ -148,7 +164,7 @@
   }
 }
 
-.un:after {
+.Un:after {
   content: '';
   height: 10px;
   width: 0;
