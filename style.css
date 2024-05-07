@@ -52,13 +52,16 @@
   user-select: none;
 }
 .TopBar a {
-  padding: 10px;
+  padding: 20px 15px;
   font-size: 15px;
   letter-spacing: 1px;
-  line-height: 2;
   margin: 0.75vw;
   text-decoration: none;
   user-select: none;
+}
+
+.TopBar a:first-child {
+  margin-left: 0;
 }
 
 .TopBar a, .TopBar {
