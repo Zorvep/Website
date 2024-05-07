@@ -3,6 +3,18 @@
   --grey: grey;
 }
 
+.CursorGlow {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  left: -50vw;
+  position: absolute;
+  filter: drop-shadow(0px 0px 15px white) contrast(200%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
 * {
   cursor: none;
 }
@@ -31,18 +43,6 @@
   drop-shadow(-15px -15px 30px rgb(92, 92, 92));
 }
 
-.MouseGlow {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  left: -50vw;
-  position: absolute;
-  filter: drop-shadow(0px 0px 15px white) contrast(200%);
-  pointer-events: none;
-  mix-blend-mode: difference;
-}
-
 .TopBar {
   height: 1vw;
   width: 80vw;
@@ -51,12 +51,13 @@
   user-select: none;
 }
 
-.TopBar div {
+.TopBar {
   display: inline-flex;
   height: auto;
 }
 
-.TopBar div a{
+.TopBar a{
+  padding: 10px;
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 2;
@@ -65,7 +66,7 @@
   user-select: none;
 }
 
-.TopBar div a, .TopBar div div{
+.TopBar a, .TopBar {
   color: grey;
   font-family: 'Courier New', monospace;
 }
@@ -75,21 +76,9 @@
     rgb(200, 200, 200) -2px -2px 20px;}
 }
 
-.TopBar div:hover{
+.TopBar a:hover{
   color: white;
   animation: glow 0.1s forwards;
-}
-
-.TopBar div:hover a{
-  color: white;
-}
-
-.TopBar div div:not(:last-child) {
-  height: 20px;
-  width: 1px;
-  background-color: white;
-  display: inline-flex;
-  position: absolute;
 }
 
 .Header {  
