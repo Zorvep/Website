@@ -16,14 +16,16 @@
 
 .backround-image {
   background-image: url("/images/CrossingArms.png");
-  height: 100px;
-  width: 100px;
-  top: 10%;
-  left: 10%;
-  background-repeat: no-repeat;
+  height: 50vw;
+  width: 50vw;
+  bottom: 0%;
+  left: 50vw;
+  position: absolute;
+  background-size: contain;
 }
 
 .topbar {
+  height: 1vw;
   width: 80vw;
   padding: 1vw 0 0 5vw;
   position: fixed;
@@ -44,6 +46,7 @@
 
 .topbar a:hover{
   color: white;
+  box-shadow:white 4px 4px 5px, white -2px -2px 20px;
 }
 
 .topbar div:not(:last-child) {
