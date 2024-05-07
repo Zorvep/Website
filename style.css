@@ -24,8 +24,7 @@
   background-size: contain;
   overflow: hidden;
   filter: drop-shadow(15px 25px 15px rgb(255, 255, 255)) 
-  drop-shadow(-15px -25px 25px rgb(92, 92, 92))
-  blur(1px);
+  drop-shadow(-30px -50px 60px rgb(92, 92, 92));
 }
 
 .topbar {
