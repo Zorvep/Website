@@ -22,6 +22,7 @@
   left: 50vw;
   position: absolute;
   background-size: contain;
+  filter: glow(10px 10px 5px grey);
 }
 
 .topbar {
