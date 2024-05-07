@@ -29,27 +29,42 @@
   width: 80vw;
   padding: 1vw 0 0 5vw;
   position: fixed;
+  user-select: none;
 }
 
-.topbar a{
+.topbar div {
+  display: inline-flex;
+  height: auto;
+}
+
+.topbar div a{
   font-size: 15px;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 2;
   margin: 0.75vw;
   text-decoration: none;
+  user-select: none;
 }
 
-.topbar a, .topbar div{
+.topbar div a, .topbar div div{
   color: grey;
   font-family: 'Courier New', monospace;
 }
 
-.topbar a:hover{
-  color: white;
-  box-shadow:white 4px 4px 5px, white -2px -2px 20px;
+@keyframes glow {
+  100% {box-shadow:rgb(200, 200, 200) 4px 4px 5px, rgb(200, 200, 200) -2px -2px 20px;}
 }
 
-.topbar div:not(:last-child) {
+.topbar div:hover{
+  color: white;
+  animation: glow 0.1s forwards;
+}
+
+.topbar div:hover a{
+  color: white;
+}
+
+.topbar div div:not(:last-child) {
   height: 20px;
   width: 1px;
   background-color: white;
