@@ -51,8 +51,8 @@
   position: fixed;
   user-select: none;
 }
-.TopBar a{
-  padding: 12px;
+.TopBar a {
+  padding: 10px;
   font-size: 15px;
   letter-spacing: 1px;
   line-height: 2;
@@ -65,13 +65,19 @@
   color: grey;
   font-family: 'Courier New', monospace;
 }
+.TopBar hr {
+  margin: auto 0;
+  height: 25px;
+  border-color: rgb(200, 200, 200);
+}
+
 
 @keyframes glow {
   100% {box-shadow:rgb(200, 200, 200) 4px 4px 5px,
     rgb(200, 200, 200) -2px -2px 20px;}
 }
 
-.TopBar a:hover{
+.TopBar a:hover {
   color: white;
   animation: glow 0.2s forwards;
 }
