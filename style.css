@@ -20,13 +20,20 @@
 }
 
 .Background {
+  scroll-snap-type: y mandatory;
   background-color: black;
-  height: 300vh;
-  width: 50vw;
+  margin: 0;
   overflow-x: hidden;
 }
 
-.BackroundImage {
+.Page {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  scroll-snap-align: center;
+}
+
+.CrossingArmsImage {
   background-image: url("/images/CrossingArms.png");
   height: 50vw;
   width: 50vw;
@@ -34,7 +41,6 @@
   left: 49vw;
   position: absolute;
   background-size: contain;
-  overflow: hidden;
   filter: drop-shadow(10px 10px 8px rgb(223, 223, 223)) 
   drop-shadow(-15px -15px 30px rgba(165, 165, 165, 0.37));
 }
@@ -96,9 +102,8 @@
   border-color: rgb(200, 200, 200);
 }
 
-.Header {  
+.Header { 
   padding: 0;
-  top: 45%;
   left: 5vw;
   position: absolute;
   text-align: left;

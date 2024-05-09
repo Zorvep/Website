@@ -5,7 +5,7 @@ SetCursorPosition = (mouse) => {
     const scrollLeft = element.scrollLeft;
 
     CursorGlow.style.left = ((mouse.clientX + scrollLeft) - CursorGlow.offsetWidth/2) + "px";
-    CursorGlow.style.top = ((mouse.clientY + scrollTop) - CursorGlow.offsetHeight/2) + "px";
+    CursorGlow.style.top = ((mouse.clientY + scrollTop) - CursorGlow.offsetHeight) + "px";
     console.log(scrollTop);
 };
 
