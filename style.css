@@ -1,27 +1,36 @@
 :root {
-  --white: white;
-  --grey: grey;
+  /* Colors */
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-white: white;
+  --color-black: black;
+  --color-grey: grey;
+}
+
+* {
+  cursor: none;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .CursorGlow {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
   left: -50%;
   position: absolute;
-  filter: drop-shadow(0px 0px 15px white);
+  filter: drop-shadow(0px 0px 15px var(--color-white));
   pointer-events: none;
   mix-blend-mode: difference;
 }
 
-* {
-  cursor: none;
-}
-
 .Background {
   scroll-snap-type: y mandatory;
-  background-color: black;
+  background-color: var(--color-black);
   margin: 0;
   overflow-x: hidden;
 }
@@ -29,19 +38,20 @@
 .Page {
   position: relative;
   height: 100vh;
-  overflow: hidden;
   scroll-snap-align: center;
+  overflow: hidden;
 }
 
 .CrossingArmsImage {
   background-image: url("/images/CrossingArms.png");
-  height: 50vw;
-  width: 50vw;
+  height: 60rem;
+  width: 60rem;
   bottom: 0%;
-  left: 49vw;
+  right: 0;
   position: absolute;
   background-size: contain;
-  filter: drop-shadow(10px 10px 8px rgb(223, 223, 223)) 
+  background-repeat: no-repeat;
+  filter: drop-shadow(10px 10px 8px rgb(255, 255, 255)) 
   drop-shadow(-15px -15px 30px rgba(165, 165, 165, 0.37));
 }
 
@@ -52,48 +62,43 @@
   user-select: none;
   top: 0;
   left: 0;
-  padding-left: 5vw;
-  backdrop-filter: blur(10px);
-  /* mask-image: linear-gradient(to bottom, black 50%, transparent 100%); */
+  padding-left: 5em;
   z-index: 2;
 }
 
-/* .TopBar::after {
+.TopBar::before {
   content: "";
   height: 100%;
   width: 100%;
+  left: 0;
+  position: absolute;
   backdrop-filter: blur(10px);
-  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-} */
+  mask-image: linear-gradient(to bottom, var(--color-black) 50%, transparent 100%);
+  z-index: -1;
+}
 
 .TopBar a {
-  padding: 20px 15px;
-  font-size: 15px;
+  padding: 1.25em 1em;
+  margin: 1em 0.5em;
   letter-spacing: 1px;
-  margin: 0.75vw;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--color-black);
+  transition: box-shadow 0.2s ease;
   text-decoration: none;
   user-select:text;
 }
 
-.TopBar a:first-child {
+/* .TopBar a:first-child {
   margin-left: 0;
-}
+} */
 
 .TopBar a, .TopBar {
-  color: grey;
+  color: var(--color-grey);
   font-family: 'Courier New', monospace;
 }
 
-@keyframes glow {
-  100% {box-shadow:rgb(200, 200, 200) 4px 4px 5px,
-    rgb(200, 200, 200) -2px -2px 20px;
-  }  
-}
-
 .TopBar a:hover {
-  color: white;
-  animation: glow 0.2s forwards;
+  color: var(--color-white);
+  box-shadow: 4px 4px 5px,-2px -2px 20px;
 }
 
 .TopBar hr {
@@ -104,52 +109,11 @@
 
 .Header { 
   padding: 0;
-  left: 5vw;
+  left: 5rem;
   position: absolute;
   text-align: left;
   filter: drop-shadow(-10px -10px 40px rgb(255, 255, 255, 0.3))
   drop-shadow(5px 5px 5px rgba(255, 255, 255, 0.5));
-}
-
-.Button {
-  height: 50px;
-  width: auto;
-  font-size: 30px;
-  font-family: 'Courier New', monospace;
-  color: #fff;
-  background-color: #333;
-  border: none;
-  border-radius: 4px;
-  margin: 0px 5px;
-  padding: 0px 10px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Button:hover {
-  background-color: #555; /* slightly lighter background on hover but use root vars */
-}
-
-.Hackerbox {
-  height: auto;
-  width: 600px;
-  font-family: 'Courier New', monospace;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  outline: auto;
-  padding-inline: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  resize: none;
-  box-sizing: border-box;
-}
-
-.Hackerbox:focus {
-  outline: 2px dashed rgba(255, 255, 255, 0.4);
 }
 
 @keyframes underlineAnimation {
@@ -177,10 +141,28 @@
   content: '';
   height: 10px;
   width: 0;
-  background: white;
+  background: var(--color-white);
   position: absolute;
   top: 100%;
   left: 0;
   animation: underlineAnimation 750ms;
   animation-delay: 500ms;
 }
+
+/* .Hackerbox {
+  height: auto;
+  width: 600px;
+  font-family: 'Courier New', monospace;
+  color: var(--color-white);
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: auto;
+  padding-inline: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.Hackerbox:focus {
+  outline: 2px dashed rgba(255, 255, 255, 0.4);
+} */
