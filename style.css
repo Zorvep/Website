@@ -26,11 +26,12 @@ html {
   filter: drop-shadow(0px 0px 15px var(--color-white));
   pointer-events: none;
   mix-blend-mode: difference;
+  z-index: 9999;
 }
 
 .Background {
   scroll-snap-type: y mandatory;
-  background-color: var(--color-black);
+  background-color: var(--color-grey);
   margin: 0;
   overflow-x: hidden;
 }
@@ -60,10 +61,16 @@ html {
   display: inline-flex;
   position: fixed;
   user-select: none;
-  top: 0;
-  left: 0;
-  padding-left: 5em;
-  z-index: 2;
+  z-index: 100;
+}
+
+.TopBar div{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  position: fixed;
+  user-select: none;
+  z-index: 100;
 }
 
 .TopBar::before {
@@ -73,27 +80,23 @@ html {
   left: 0;
   position: absolute;
   backdrop-filter: blur(10px);
-  mask-image: linear-gradient(to bottom, var(--color-black) 50%, transparent 100%);
+  mask-image: linear-gradient(to bottom, var(--color-black) 75%, transparent 100%);
   z-index: -1;
 }
 
 .TopBar a {
-  padding: 1.25em 1em;
+  border-radius: 10px;
+  padding: .5em 1em;
   margin: 1em 0.5em;
   letter-spacing: 1px;
-  background-color: var(--color-black);
+  background-color: transparent;
   transition: box-shadow 0.2s ease;
+  color: var(--color-white);
   text-decoration: none;
-  user-select:text;
-}
-
-/* .TopBar a:first-child {
-  margin-left: 0;
-} */
-
-.TopBar a, .TopBar {
-  color: var(--color-grey);
-  font-family: 'Courier New', monospace;
+  user-select: text;
+  font-family: system-ui, BlinkMacSystemFont;
+  /* font-family: 'Courier New', monospace; */
+  font-weight: 500;
 }
 
 .TopBar a:hover {
@@ -101,11 +104,6 @@ html {
   box-shadow: 4px 4px 5px,-2px -2px 20px;
 }
 
-.TopBar hr {
-  margin: auto 0;
-  height: 25px;
-  border-color: rgb(200, 200, 200);
-}
 
 .Header { 
   padding: 0;
