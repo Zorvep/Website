@@ -158,6 +158,28 @@ html {
   animation-delay: 500ms;
 }
 
+.bottom-bar {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon {
+  text-decoration: none;
+  color: var(--color-white);
+  transition: transform 0.1s;
+}
+
+.icon:hover {
+  color: var(--color-white);
+  transform: scale(1.5);
+}
+
+.icon:active {
+  transform: scale(1.2, 0.5);
+}
 /* .Hackerbox {
   height: auto;
   width: 600px;
